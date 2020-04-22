@@ -1,0 +1,296 @@
+﻿/* Global */
+body {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body a {
+    text-decoration: none;
+    color: #f7a6a5;
+}
+
+.container {
+    width: 65%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+section {
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+figure > img {
+    width: 100%;
+}
+
+/* Woodlands Page */
+#showcase {
+    min-height: 400px;
+    background: url('../media/woodlands.jpg') no-repeat 0 -1700px !important;
+    text-align: center;
+    color: white;
+}
+/* Global */
+body {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+section {
+    width: 100%;
+}
+
+/* Header */
+header {
+    background-color: white;
+    min-height: 70px;
+}
+
+    header img {
+        display: block;
+        margin: 0 auto;
+        width: 20%;
+    }
+
+/*navigation*/
+nav {
+    width: 100%;
+    background-color: #f4f4f4;
+    box-shadow: 0 1px 2px grey;
+    border-top: 1.5px solid #a9a9a9;
+    position: relative;
+    z-index: 999;
+}
+
+    nav .current a {
+        border-bottom: 5px solid red;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        nav ul li {
+            position: relative;
+            display: inline-block;
+            list-style-type: none;
+            margin: 0;
+            padding: 7px 0;
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: black;
+                font-size: 25px;
+                padding: 7px 20px;
+                border-bottom: 5px solid transparent;
+                transition: 0.5s all;
+            }
+
+                nav ul li a:hover {
+                    border-bottom: 5px solid red;
+                }
+/*dropdown list*/
+.parent .dropdown {
+    min-width: 100%;
+    background-color: #f4f4f4;
+    border: 0 1px 1px 1px solid #a9a9a9;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+    .parent .dropdown li {
+        padding: 0;
+        display: block;
+    }
+
+        .parent .dropdown li a {
+            padding: 7px 20px 7px 20px;
+            display: block;
+        }
+
+.parent:hover .dropdown {
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+}
+
+.nav-placeholder {
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    box-shadow: 0 1px 2px grey;
+    z-index: 1000;
+}
+/* Woodlands Page */
+#showcase {
+    min-height: 400px;
+    background: url('../media/woodlands.jpg') no-repeat 0 -1700px;
+    text-align: center;
+    color: white;
+}
+
+@keyframes woodlands {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: black;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+#showcase h1 {
+    line-height: 10px;
+    margin-top: 170px;
+    font-size: 55px;
+    animation-iteration-count: infinite;
+    animation-name: woodlands;
+    animation-duration: 5s;
+}
+
+.contain {
+    width: 65%;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.wide h2 {
+    margin: 0;
+}
+
+.wide {
+    max-width: 65%;
+    float: left;
+}
+
+.narrow {
+    max-width: 30%;
+    margin-right: 5%;
+    float: left;
+}
+
+
+img {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table caption {
+    font-weight: bold;
+}
+
+tr, table {
+    width: 100%;
+}
+
+th, td {
+    border-top: 1px solid #f7a6a5;
+    border-bottom: 1px solid #f7a6a5;
+    width: 50%;
+    padding: 2%;
+}
+
+/* Volunteer Page */
+#showcase2 {
+    min-height: 400px;
+    min-width: 100%;
+    background: url('../media/volunteer2.jpg') no-repeat center !important;
+    text-align: center;
+}
+
+#showcase2 h1 {
+    line-height: 10px;
+    margin-top: 170px;
+    font-size: 55px;
+}
+
+.volunteer-header, .volunteer-header h1{
+    text-align: center;
+    background-color: pink;
+    font-size: 30px;
+}
+
+#form form{
+    margin: 40px 0;
+}
+
+.aboutform{
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+.button{
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    padding: 5px;
+}
+
+fieldset {
+    margin: 1% 0;
+}
+
+input:not([type=checkbox]):not([type=radio]), select, textarea {
+    width: 20%;
+}
+
+label {
+    width: 10%;
+    text-align: left;
+    display: inline-block;
+}

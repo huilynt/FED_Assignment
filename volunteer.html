@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=display-width" />
+    <meta name="author" content="Muhd Ikmal" />
+    <meta name="description" content="Volunteer Form" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <link rel="stylesheet" href="css/ikmal.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <title>Volunteer</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img id="logo" src="media/logo.PNG" alt="Community Logo" align="middle" />
+        </div>
+    </header>
+    <!-- Navigation -->
+    <div class="status"></div>
+    <div class="navcon">
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li class="parent">
+                    <a href="#">Locations ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="clementi.html" target="_blank">Clementi</a></li>
+                        <li><a href="woodlands.html" target="_blank">Woodlands</a></li>
+                    </ul>
+                </li>
+                <li><a href="programmes.html" target="_blank">Programmes</a></li>
+                <li><a href="book.html" target="_blank">Booking</a></li>
+                <li class="current"><a href="volunteer.html" target="_blank">Volunteer</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Showcase -->
+    <section id="showcase2">
+        <div class="container">
+            <h1>Volunteer</h1>
+        </div>
+    </section>
+    
+    <!-- Volunteer Header -->
+    <section class="volunteer-header">
+        <div class="container">
+            <h1>Be A Volunteer!</h1>
+        </div>
+    </section>
+
+    <!-- Form -->
+    <section class="aboutform">
+        <div class="container">
+            <p>Thank you for volunteering in the community. Volunteers are people who want to make a difference in the community and enrich the lives of people around them.
+            When you join as a volunteer, not only will you contribute to the community, but also become a part of a strong network
+            of friends and neighbours</p>
+            <p>This form will take 5 to 10 minutes to complete</p>
+        </div>
+    </section>
+
+    <section id="form">
+        <div class="container">
+            <form onsubmit="greeting()">
+                <fieldset>
+                    <legend>Personal Particulars</legend>
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" placeholder="Enter your name" required />
+                    </p>
+                    <p>
+                        <label>Gender:</label>
+                            <input type="radio" name="Gender" value="Male" required />Male
+                            <input type="radio" name="Gender" value="Female" />Female
+                    </p>
+                    <p>
+                        <label>Race:</label>
+                            <select name="Race" required>
+                                <option>Malay</option>
+                                <option>Chinese</option>
+                                <option>Indian</option>
+                                <option>Others</option>
+                            </select>
+                    </p>
+                    <p>
+                        <label>Date of Birth:</label>
+                            <input type="date" class="textheight" name="Date" max="2018-01-24"
+                                   placeholder="dd/mm/yyyy" required />
+                    </p>
+                    <p>
+                        <label for="phoneno">Phone No.:</label>
+                        <input type="tel" pattern="[689]\d{7}" title="8 digits starting with 6, 8 or 9" placeholder="Enter your phone number" required />
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" title="Enter email" placeholder="Enter your email" required />
+                    </p>
+                    <p>
+                        <label>Address:</label>
+                            <textarea id="Address" rows="2" cols="20" placeholder="Enter your address" required></textarea>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Interests</legend>
+                    <p>
+                        <input type="checkbox" name="interests" value="Sports">Sports<br>
+                        <input type="checkbox" name="interests" value="Youth">Youth Activities<br>
+                        <input type="checkbox" name="interests" value="Elderly">Programmes for the Elderly<br>
+                        <input type="checkbox" name="interests" value="Arts">Arts & Culture<br>
+                        <input type="checkbox" id="other" name="interest" value="other">Other
+                        <input type="text" id="other-text" name="other">
+                    </p>
+                </fieldset>
+                <button type="submit" class="button">Submit</button>
+                <button type="reset" class="button" onclick="return confirmation()">Reset</button>
+            </form>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/ikmal.js"></script>
+</body>
+</html>

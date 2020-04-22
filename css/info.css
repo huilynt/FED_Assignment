@@ -1,0 +1,173 @@
+﻿/* Global */
+body {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+section {
+    width: 100%;
+}
+
+/*showcase*/
+#showcase {
+    background: url('../media/mountain.jpg') no-repeat top left;
+    overflow: hidden;
+    width: 100%;
+    font-size: 0;
+}
+
+    #showcase h1 {
+        line-height: 10px;
+        font-size: 55px;
+    }
+
+    #showcase p {
+        font-size: 20px;
+    }
+
+    #showcase .text {
+        color: white;
+        top: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    #showcase .bg {
+        width: 100%;
+    }
+
+        #showcase .bg img {
+            width: 100%;
+        }
+
+/* About Us */
+#about {
+    background-color: #e00000;
+    width: 100%;
+    text-align: center;
+    color: white;
+    float: left;
+}
+
+    #about h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+#about-info {
+    padding-top: 25px;
+    float: left;
+}
+
+    #about-info article {
+        width: 50%;
+        float: left;
+    }
+
+    #about-info h2 {
+        font-size: 30px;
+    }
+
+    #about-info .container {
+        border-bottom: 1px solid black;
+    }
+
+.cc-header {
+    font-size: 30px;
+    margin-top: 5%;
+}
+
+/* Locations */
+.woodlands-index, .clementi-index {
+    width: 100%;
+    float: left;
+    margin-bottom: 5%;
+}
+
+    .woodlands-index img {
+        float: left;
+        padding-right: 40px;
+        width: 300px;
+    }
+
+    .woodlands-index h2, .clementi-index h2 {
+        margin-top: 0;
+    }
+
+
+    .clementi-index img {
+        width: 300px;
+        float: left;
+        padding-right: 40px;
+    }
+
+.info-link {
+    text-decoration: none;
+    color: black;
+}
+
+    .info-link:hover {
+        color: grey;
+    }
+
+/* Book/Volunter */
+#showcase2 {
+    background: url('../media/mountain.jpg') no-repeat top left;
+}
+
+.contribute {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+#boxes {
+    margin-top: 20px;
+    height: 450px;
+}
+
+    #boxes .box {
+        float: left;
+        width: 30%;
+        padding: 10px;
+        margin-left: 170px;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+    }
+
+        #boxes .box p {
+            font-size: 15px;
+            color: white;
+        }
+
+        #boxes .box a {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: red;
+            text-decoration: none;
+            color: white;
+        }
+
+        #boxes .box img {
+            width: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+/* Footer */
+footer {
+    background-color: red;
+    color: white;
+    line-height: 3px;
+}

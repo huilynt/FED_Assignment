@@ -1,0 +1,161 @@
+﻿/*Tay Hui Lin*/
+body {
+    background: white;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #f7a6a5;
+    transition: 0.5s all;
+}
+
+article a:hover, .sides a:hover {
+    transition: 0.5s all;
+    text-shadow: -1px -1px #e42c8b, -2px -2px #e42c8b, 1px 1px #a9e42c, 2px 2px #a9e42c;
+}
+
+article {
+    margin-bottom: 5%;
+}
+
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+
+.content-wrap {
+    width: 60%;
+    margin: 5% auto;
+}
+
+.left {
+    width: 48%;
+    margin-right: 4%;
+    float: left;
+}
+
+    .left h3, .left h2, .left figure {
+        transform: rotate(-2deg);
+    }
+
+.right {
+    width: 48%;
+    float: left;
+}
+
+    .right h3, .right h2 {
+        transform: rotate(2deg);
+    }
+
+.left, .right {
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+}
+
+fieldset {
+    border: 2px solid #f7a6a5;
+    margin: 2% 0;
+}
+
+.button, input, select {
+    border: 1px solid #f7a6a5;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+label {
+    width: 10%;
+    text-align: left;
+    display: inline-block;
+    margin-left: 2%;
+}
+
+input, select {
+    width: 20%;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table caption {
+    font-weight: bold;
+}
+
+tr, table {
+    width: 100%;
+}
+
+th, td {
+    border-top: 1px solid #f7a6a5;
+    border-bottom: 1px solid #f7a6a5;
+    width: 50%;
+    padding: 2%;
+}
+
+img {
+    width: 100%;
+}
+
+tr:nth-of-type(even) {
+    background-color: #f7e3e3;
+}
+
+.sides {
+    right: 0;
+    bottom: 50%;
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+}
+
+    .sides i {
+        background-color: #f7e3e3;
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        border-left: 1px solid #f9f2f2;
+        line-height: 1 !important;
+        float: right !important;
+        border-top: 1px solid #f9f2f2;
+    }
+
+    .sides .title {
+        background-color: #f7e3e3;
+        height: 40px;
+        padding: 10px;
+        min-width: 100px;
+        float: left !important;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(200%);
+        z-index: -1;
+        transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    }
+
+    .sides a {
+        display: block;
+    }
+
+    .sides a:hover .title {
+        float: none;
+        transition: 1s all;
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+        transform: translateX(0);
+        transition-delay: 0s, 0s, 0.3s;
+    }
+
+    .map {
+        text-align: center;
+        float: left;
+        width: 100%;
+    }
+
