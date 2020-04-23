@@ -1,4 +1,13 @@
 # FED_Assignment
-Front-end website showing Community Centres in Singapore
 
-Design and develop front-end web pages using HTML, CSS, JavaScript and jQuery. 
+#### Module
+Front-end Development (FED)
+
+#### Objective
+Design and develop the front-end of a 5-page website showcasing Community Centres in Singapore
+
+#### Languages
+* HTML
+* CSS
+* JavaScript
+* jQuery
